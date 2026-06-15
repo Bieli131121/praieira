@@ -1,0 +1,54 @@
+.section {
+  background: var(--color-areia-section);
+  padding: 72px 64px;
+}
+
+.row {
+  display: grid;
+  grid-template-columns: 1fr 220px;
+  gap: 64px;
+  align-items: center;
+}
+
+.title {
+  font-family: var(--font-display);
+  font-size: 32px;
+  font-weight: 400;
+  color: var(--color-terra-deep);
+  margin-bottom: 22px;
+}
+
+.body {
+  font-size: 15px;
+  font-weight: 300;
+  line-height: 1.85;
+  color: var(--color-text-body);
+  margin-bottom: 16px;
+}
+
+.locale {
+  font-size: 11px;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: var(--color-terra-muted);
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-top: 24px;
+}
+
+.locale::before {
+  content: '';
+  display: block;
+  width: 28px;
+  height: 1px;
+  background: var(--color-terra-muted);
+}
+
+.sun { opacity: 0.45; }
+
+@media (max-width: 768px) {
+  .section { padding: 56px 24px; }
+  .row     { grid-template-columns: 1fr; gap: 32px; }
+  .sun     { display: none; }
+}

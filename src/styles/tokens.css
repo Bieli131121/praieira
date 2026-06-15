@@ -1,0 +1,26 @@
+:root {
+  --color-areia:         #E8DFD0;
+  --color-areia-light:   #F5EDE0;
+  --color-areia-card:    #D4C4AA;
+  --color-areia-section: #EFE6D5;
+  --color-bronze:        #C4956A;
+  --color-bronze-card:   #D4A87A;
+  --color-terra:         #8B3D12;
+  --color-terra-mid:     #7A4520;
+  --color-terra-deep:    #5C2E0A;
+  --color-terra-darker:  #3C1A05;
+  --color-terra-accent:  #A04020;
+  --color-terra-muted:   #B0662A;
+  --color-text-body:     #6A3C1C;
+  --color-text-sub:      #7A4A2A;
+  --color-text-nav:      #7A4520;
+
+  --font-display: 'Playfair Display', Georgia, serif;
+  --font-body:    'DM Sans', system-ui, sans-serif;
+
+  --radius-sm:   2px;
+  --radius-md:   4px;
+  --radius-pill: 999px;
+
+  --transition: 0.2s ease;
+}

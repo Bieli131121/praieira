@@ -1,0 +1,35 @@
+.section {
+  background: var(--color-terra-deep);
+  padding: 72px 64px;
+  text-align: center;
+}
+
+.title {
+  font-family: var(--font-display);
+  font-size: 40px;
+  font-weight: 400;
+  font-style: italic;
+  color: var(--color-areia-light);
+  margin-bottom: 14px;
+}
+
+.body {
+  font-size: 14px;
+  font-weight: 300;
+  letter-spacing: 0.05em;
+  color: var(--color-bronze);
+  margin-bottom: 36px;
+}
+
+.actions {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+@media (max-width: 768px) {
+  .section { padding: 56px 24px; }
+  .title   { font-size: 30px; }
+}

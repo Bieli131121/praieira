@@ -1,0 +1,93 @@
+.hero {
+  background: var(--color-areia);
+  padding: 64px 64px 0;
+  display: grid;
+  grid-template-columns: 1fr 340px;
+  gap: 48px;
+  align-items: flex-start;
+}
+
+.text { padding-top: 8px; }
+
+.title {
+  font-family: var(--font-display);
+  font-size: clamp(44px, 5vw, 68px);
+  line-height: 1.06;
+  font-weight: 400;
+  color: var(--color-terra-deep);
+  margin-bottom: 22px;
+}
+
+.title em {
+  font-style: italic;
+  color: var(--color-terra-accent);
+}
+
+.body {
+  font-size: 15px;
+  font-weight: 300;
+  line-height: 1.8;
+  color: var(--color-text-sub);
+  max-width: 380px;
+  margin-bottom: 36px;
+}
+
+.actions {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.visual { position: relative; }
+
+.card {
+  background: var(--color-areia-card);
+  border-radius: var(--radius-md) 140px var(--radius-md) var(--radius-md);
+  height: 380px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  overflow: hidden;
+}
+
+/* Trocar por img real — remover quando tiver foto */
+.placeholder { opacity: 0.25; }
+
+.cardTag {
+  position: absolute;
+  top: 18px;
+  right: 18px;
+  background: var(--color-terra);
+  color: var(--color-areia-light);
+  font-size: 10px;
+  font-weight: 500;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  padding: 6px 12px;
+  border-radius: var(--radius-sm);
+}
+
+.cardCaption {
+  position: absolute;
+  bottom: 20px;
+  left: 20px;
+  font-family: var(--font-display);
+  font-size: 14px;
+  font-style: italic;
+  color: var(--color-terra-deep);
+}
+
+@media (max-width: 768px) {
+  .hero {
+    grid-template-columns: 1fr;
+    padding: 40px 24px 0;
+    gap: 32px;
+  }
+
+  .card {
+    height: 280px;
+    border-radius: var(--radius-md) 80px var(--radius-md) var(--radius-md);
+  }
+}
